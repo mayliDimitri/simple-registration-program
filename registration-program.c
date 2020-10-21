@@ -21,7 +21,8 @@ struct Karyawan
 
 void enter()
 {
-	for(int i=0; i<35; i++)
+	int i;
+	for(i=0; i<35; i++)
 	{
 		printf("\n");
 	}
@@ -117,7 +118,8 @@ void reg()
 
 int searchData(char a[])
 {	
-	for(int i=0; i<count; i++)
+	int i;
+	for(i=0; i<count; i++)
 	{
 		if(strcmpi(a, K[i].nama)==0) //mencari data yang sama
 		{
@@ -253,7 +255,8 @@ void viw()
 	printf(" VIEW REGISTRANT \n");
 	printf("=================\n\n");
 	printf("%-28s %6s %15s %15s %33s\n\n", "Nama", "Usia", "Nomor Telepon", "Tanggal Lahir", "Jumlah Keikutsertaan Organisasi");
-	for(int i=0; i<count; i++)
+	int i;
+	for(i=0; i<count; i++)
 	{
 		if(strcmpi(K[i].nama,"")!=0)
 		{
